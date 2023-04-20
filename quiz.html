@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+    <head>
+        <title>Quiz</title>
+        <link rel="icon" type="image/png" href="images/SA.png"/> 
+        <meta charset="UTF-80">
+        <link rel="stylesheet" href="style.css">   
+
+    </head>
+
+    <body>
+        <ul id="navBar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li class="active"><a href="quiz.html.">Quiz</a></li>
+        </ul>
+
+        <h1>Quiz!</h1>
+        <p>Here is a quick quiz about South Africa.</p>
+
+        <form name="firstName">
+            <label for="firstName" name="firstName">Enter your name: </label>
+            <input type="text" name="firstName" id="firstName" size="30" required>
+        </form>
+
+        <div id="quizContainer">
+        <form name="Quiz">
+            <!-- Q1-->
+            <h3>Question 1</h3>
+            <p>Which is the South African flag?</p>
+        
+            <input type="radio" name="flag" value="NA">
+            <label for="NA" class="flag"><img src="images/NA.png" height="50"></label>
+            <input type="radio" name="flag" value="SA">
+            <label for="SA" class="flag"><img src="images/SA.png" height="50"></label>
+            <input type="radio" name="flag" value="MZ">
+            <label for="MZ" class="flag"><img src="images/MZ.png" height="50"></label>
+            <input type="radio" name="flag" value="ZW">
+            <label for="ZW" class="flag"><img src="images/ZW.png" height="50"></label>
+
+            <br>
+            <!-- Q2-->
+            <h3>Question 2</h3>
+            <label for="capitals">How many capital cities does SA have?</label>
+            <input type="number" name="capitals" id="capitals" min="0" max="10"> <br>
+            
+            <br>
+            <!-- Q3-->
+            <h3>Question 3</h3>
+            <label for="ocean">Durban, the busiest port in South Africa, is on which ocean?</label>
+            <select id="ocean" name="ocean">
+                <option value="blank"></option>
+                <option value="southAtlantic">South Atlanic</option>
+                <option value="Southern">Southern</option>
+                <option value="Indian">Indian</option>
+            </select><br>
+            
+            <br>
+            <!-- Q4-->
+            <h3>Question 4</h3>
+            <label for="krugerSize">Kruger National Park (KNP) is approximately the same size as which country?</label>
+            <select id="krugerSize" name="krugerSize">
+                <option value="blank"></option>
+                <option value="Wales">Wales</option>
+                <option value="Malta">Malta</option>
+                <option value="Italy">Italy</option>
+            </select><br>
+        
+            <br>
+            <!-- Q5-->
+            <h3>Question 5</h3>
+            <label for="mammals">Approximately, how many mammal species occur in KNP?</label>
+            <input type="number" name="mammals" id="mammals" min="0" max="300" step="25"> <br>
+            
+            <br>
+            <!--Q6-->
+            <h3>Question 6</h3>
+            <p>Can you name the "Big Five"?</p>
+            <label for="bigFive1">1</label>
+            <input type="text" name="bigFive1" size="20"><br>
+
+            <label for="bigFive2">2</label>
+            <input type="text" name="bigFive2" size="20"><br>
+
+            <label for="bigFive3">3</label>
+            <input type="text" name="bigFive3" size="20"><br>
+
+            <label for="bigFive4">4</label>
+            <input type="text" name="bigFive4" size="20"><br>
+
+            <label for="bigFive5">5</label>
+            <input type="text" name="bigFive5" size="20"><br>
+
+        </form>
+        <button type="button" onclick="checkAnswers();">DONE</button>
+        </div>
+    
+
+
+        <script src="quiz.js"></script>
+
+    </body>
+
+</html>
